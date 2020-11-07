@@ -62,10 +62,8 @@ def create_directories(directory_path: str, file_types: Set[str]):
         try:
             os.mkdir(directory_path + "/" + file)
         except FileExistsError:
-            print('here1')
             continue
         except OSError as e:
-            print('here2')
             print(str(e))
             cleanup(directory_path=directory_path, file_types=file_types)
             sys.exit(1)
