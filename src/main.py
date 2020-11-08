@@ -6,6 +6,7 @@ from typing import List, Set, Dict
 file_types_mapping: Dict[str, str] = {}
 
 
+
 def escape_chars(filename: str) -> str:
     """Escapes characters such as space, quotes etc.
 
